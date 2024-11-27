@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: qfmm8vowh-nodejs
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: qfmm8vowh-nodejs 
+  name: qfmm8vowh-nodejs
+spec:
+  ports:
+  - port: 3001 
+    targetPort: 3001 
+  selector:
+    app.kubernetes.io/instance: qfmm8vowh-nodejs 
